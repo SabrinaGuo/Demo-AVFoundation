@@ -40,7 +40,7 @@ class ViewController: UIViewController {
        
         // 如果使用者沒有輸入任何文字時
         if(speakWords.text==""){
-            speak("no words")
+            speak("please enter text")
         }
         speak(speakWords.text!)
     }
@@ -51,7 +51,7 @@ class ViewController: UIViewController {
       
         // 如果使用者沒有輸入任何文字時
         if(speakWords.text==""){
-            speak("no words")
+            speak("請輸入文字")
         }
         speak(speakWords.text!)
     }
@@ -62,7 +62,7 @@ class ViewController: UIViewController {
        
         // 如果使用者沒有輸入任何文字時
         if(speakWords.text==""){
-            speak("no words")
+            speak("por favor ingrese texto")
         }
         speak(speakWords.text!)
     }
@@ -72,7 +72,7 @@ class ViewController: UIViewController {
         
         // 如果使用者沒有輸入任何文字時
         if(speakWords.text==""){
-            speak("no words")
+            speak("veuillez entrer du texte")
         }
         speak(speakWords.text!)
     }
