@@ -57,7 +57,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="choseEnglish:" destination="BYZ-38-t0r" eventType="touchUpInside" id="beS-u9-caO"/>
+                                    <action selector="choseLanguages:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xqx-Ge-IXN"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="english" translatesAutoresizingMaskIntoConstraints="NO" id="4LO-i6-kbp">
@@ -78,24 +78,6 @@
                                 <color key="textColor" systemColor="systemGray3Color"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LV1-o5-DWU">
-                                <rect key="frame" x="197" y="246" width="162" height="136"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </backgroundConfiguration>
-                                </buttonConfiguration>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer. cornerRadius">
-                                        <integer key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="choseMandarin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hz3-0Y-xbU"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mandarin" translatesAutoresizingMaskIntoConstraints="NO" id="uLl-dm-6er">
                                 <rect key="frame" x="197" y="319" width="162" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -129,7 +111,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="choseSpanish:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BJk-LZ-7Fv"/>
+                                    <action selector="choseLanguages:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e8z-Mr-wrB"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="spanish" translatesAutoresizingMaskIntoConstraints="NO" id="ecP-xh-YHi">
@@ -165,7 +147,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="choseFrech:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mBa-Ge-GPm"/>
+                                    <action selector="choseLanguages:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ikk-sK-4Sd"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="french" translatesAutoresizingMaskIntoConstraints="NO" id="igG-Jl-ia6">
@@ -196,11 +178,33 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="vAU-HR-bMt"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LV1-o5-DWU">
+                                <rect key="frame" x="197" y="246" width="162" height="136"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer. cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="choseLanguages:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wmw-Ko-OBB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                     </view>
                     <connections>
+                        <outlet property="btnEnglish" destination="AWf-LJ-GZ8" id="uzP-4N-UJZ"/>
+                        <outlet property="btnFrech" destination="c82-UP-MNB" id="3dW-Ul-hsK"/>
+                        <outlet property="btnMandarin" destination="LV1-o5-DWU" id="mUY-Yt-P3e"/>
+                        <outlet property="btnSpanish" destination="Z24-2K-w7o" id="vy0-Vc-bPM"/>
                         <outlet property="speakWords" destination="tzi-iO-8M9" id="Gbg-mO-1eS"/>
                     </connections>
                 </viewController>
